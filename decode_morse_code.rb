@@ -1,4 +1,4 @@
-# DECODE ONE CHARACTER
+# DECODE ONE CHARACTER (PART I)
 
 def decode_char(char)
   morse_code = {
@@ -14,7 +14,7 @@ def decode_char(char)
   end
 end
 
-# DECODE A WORD
+# DECODE A WORD (PART II)
 
 def decode_word(word)
   word_decoded = ''
@@ -22,4 +22,14 @@ def decode_word(word)
     word_decoded += decode_char(letter)
   end
   word_decoded
+end
+
+# DECODE FULL MESSAGE (PART III)
+
+def decode_full_message(message)
+  message_decoded = ''
+  message.split.each do |messages|
+    message_decoded += decode_word(messages).to_s
+  end
+  message_decoded
 end
