@@ -2,6 +2,8 @@
 
 > This program in Ruby helps decoding morse code. In the project were created several methods which take a string parameter, and return the string representation to decode a character, word and an entire message in [Morse code](https://en.wikipedia.org/wiki/Morse_code).
 
+![image](https://user-images.githubusercontent.com/88522494/178771101-79b7dc29-1008-45c6-ba67-fd984103fa3f.png)
+
 ## Getting Started
 
 - [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/) on your local machine
