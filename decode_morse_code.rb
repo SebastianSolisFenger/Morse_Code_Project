@@ -28,6 +28,6 @@ def decode_full_message(message)
   message_decoded
 end
 
-# MORSE INPUT
+# MORSE INPUT.
 
 puts decode_full_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
