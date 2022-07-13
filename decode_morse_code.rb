@@ -9,6 +9,7 @@ def decode_char(char)
     '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X', '-.--' => 'Y', '--..' => 'Z'
   }
 
+  # morse_codes[char]
   morse_code.each do |key, value|
     return value if key == char
   end
@@ -28,8 +29,10 @@ end
 
 def decode_full_message(message)
   message_decoded = ''
-  message.split.each do |messages|
-    message_decoded += decode_word(messages).to_s
+  message.split('  ').each do |messages|
+    message_decoded += "#{decode_word(messages)} "
   end
   message_decoded
 end
+
+puts decode_full_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.  .-. ..- -... .. . ...')
