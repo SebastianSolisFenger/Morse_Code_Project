@@ -28,8 +28,8 @@ end
 
 def decode_full_message(message)
   message_decoded = ''
-  message.split('  ').each do |messages|
-    message_decoded += "#{decode_word(messages)} "
+  message.split('  ').each do |word|
+    message_decoded += "#{decode_word(word)} "
   end
   message_decoded
 end
